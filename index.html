@@ -1,0 +1,43 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lobster" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<style>
+		body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:22px}.header{text-align:center;font-family:Lobster;font-size:50px;color:#d9534f}input[type=number]{width:70px;display:inline}#password{background-color:#d5d5d5;color:#d9534f}.randomPassword{font-size:24px}.content{padding-top:5%}
+	</style>
+</head>
+<body>
+<div class="container">
+	<div class="header">
+		Random Password Generator
+	</div>
+	<div class="row content">
+		<div class="col-sm-6 col-md-6">
+			<div id="passwordLength">
+				Password Length: <input type='number' class='form-control' id='length' value='8' min='8' max='100' />
+			</div>
+			<div id="checkboxes">
+				<div class='checkbox'>
+					<label><input type='checkbox' id='lowerCase' checked>a-z</label>
+				</div>
+				<div class='checkbox'>
+					<label><input type='checkbox' id='upperCase'>A-Z</label>
+				</div>
+				<div class='checkbox'>
+					<label><input type='checkbox' id='number'>0-9</label>
+				</div>
+				<div class='checkbox'>
+					<label><input type='checkbox' id='symbol'>!$%@#</label>
+				</div>
+				<input type='submit' class='btn btn-danger' id='generatePassword' value='Generate Password'>
+			</div>
+		</div>
+		<div class="col-sm-6 col-md-6">
+			<div class="randomPassword">Password: <span id="password">null</span></div>
+		</div>
+	</div>
+</div>
+<script src="script.js"></script>
+</body>
+
+</html>
